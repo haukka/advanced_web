@@ -1,0 +1,178 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+@light-brown: #be9a71;
+@medium-brown: #6f4611;
+@dark-brown: #410f0a;
+
+@font-face
+{
+  font-family: Hobo;
+  src: url(HoboStd.otf);
+}
+
+html
+{
+  height: 100%;
+}
+body
+{
+  background: url(/assets/images/background-texture.png);
+  background-size: 100%;
+  background-repeat: repeat-y;
+  font-family: Hobo;
+  width: 100%;
+  height: 100%;
+  color: @medium-brown;
+  h1, h2, h3, h4, h5
+  {
+    color: @dark-brown;
+  }
+  h1
+  {
+    font-size: 26px;
+  }
+  h2
+  {
+    a
+    {
+      color: @dark-brown;
+    }
+    a:hover
+    {
+      color: @dark-brown;
+    }
+    font-size: 20px;
+  }
+}
+
+.block
+{
+  border: solid 2px rgba(190, 154, 113, 0.5);;
+  border-radius: 10px;
+  margin: 2px;
+  background-color:rgba(255,255,255,0.28);
+  padding: 0px 30px 20px 30px;
+}
+
+.block-no-padding
+{
+  border: solid 2px rgba(190, 154, 113, 0.5);;
+  border-radius: 10px;
+  margin: 2px;
+  background-color:rgba(255,255,255,0.28);
+  padding: none;
+  .price
+  {
+    text-align: right;
+  }
+}
+
+.block-description
+{
+  border: solid 2px rgba(190, 154, 113, 0.5);;
+  border-radius: 10px;
+  margin: 2px;
+  background-color:rgba(255,255,255,0.28);
+  padding: 25px 10px 20px 10px;
+  min-height: 300px;
+}
+
+.centered-block-60
+{
+  border: solid 2px rgba(190, 154, 113, 0.5);;
+  border-radius: 5px;
+  background-color:rgba(255,255,255,0.28);
+  padding: 0px 30px 20px 30px;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content
+{
+  width: 90%;
+  margin: 0 auto;
+}
+
+input
+{
+  text-align: center;
+}
+
+div.center
+{
+  text-align: center;
+  li
+  {
+    text-align: left;
+  }
+}
+
+nav.pagination
+{
+  background-color: white;
+  border: solid 1px @light-brown;
+  padding: 2px;
+  span
+  {
+    padding: 1px 3px;
+    a
+    {
+      color: @light-brown;
+    }
+  }
+  span.current
+  {
+    a
+    {
+      color: @medium-brown;
+    }
+  }
+}
+
+.breadcrumbs
+{
+  a
+  {
+    color: @medium-brown;
+  }
+  a:hover
+  {
+    color: @medium-brown;
+  }
+}
+
+.cart
+{
+  text-align: right;
+  .btn-success
+  {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.product_link, .blog_link
+{
+  a
+  {
+    color: @medium-brown;
+  }
+  a:hover
+  {
+    color: @medium-brown;
+  }
+}

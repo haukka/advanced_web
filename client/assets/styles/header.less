@@ -1,0 +1,44 @@
+@light-yellow: #fffbd1;
+
+@font-face
+{
+  font-family: GillSans;
+  src: url(GillSans.ttf);
+}
+
+.header
+{
+  background: url(/assets/images/header/background.png);
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  height: 120px;
+  a
+  {
+    font-size: 46px;
+    color: @light-yellow;
+    position: relative;
+    top: 25px;
+    left: 30px;
+    font-family: GillSans;
+  }
+  a:hover
+  {
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+    text-decoration: none;
+  }
+  div.text
+  {
+    position:absolute;
+    width: 250px;
+    z-index: 1;
+  }
+  img
+  {
+    float: left;
+    position:absolute;
+    left: 193px;
+    top: 2px;
+    z-index: 0;
+  }
+}

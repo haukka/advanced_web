@@ -1,0 +1,16 @@
+<div class="block center" data-ng-init="init()">
+
+  <h1>Blogs</h1>
+  <div class="breadcrumbs" style="position: relative; top:-50px;text-align: left;">
+    <a href="/">Accueil</a> >> Blogs
+  </div>
+    
+  <p>Dans cette section du site vous trouverez une liste de blog en relation avec le thé et le café. Vous pourez ainsi &eacute;tancher votre soif de savoir sur votre sujet favori.</p>
+
+    <div class="row block blog_link" itemscope itemtype="Blog" style="padding: 3px 10px;" ng-repeat="feed in feeds">
+     <a href="{{feed.link}}">
+        <h2>{{feed.title}}</h2>
+      </a>
+      <p itemprop="description">{{feed.contentSnippet}}</p>
+    </div>
+</div>

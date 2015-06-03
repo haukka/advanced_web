@@ -1,0 +1,20 @@
+<div class="block center">
+  <h1>Liste des caf&eacute;s</h1>
+  <div class="breadcrumbs" style="position: relative; top:-50px;text-align: left;">
+    <a href="/">Accueil</a> >> Caf&eacute;s
+  </div>
+  <p style="margin-bottom: 40px;">Voici la liste de tous nos caf&eacute;s.</p>
+  
+  <div class="row block" itemscope itemtype="Product" style="padding: 3px 10px;" ng-repeat="product in products">
+    <div class="col-md-2" itemprop="photo" style="margin: auto;">
+      <img src="{{product.picture}}"  height="100">
+    </div>
+    <div class="col-md-9" itemprop="description">
+      <h2><a ng-href="/#/product/{{product._id}}">{{product.name}}</a></h2>
+      <p>{{product.description}}</p>
+    </div>
+    <div class="col-md-1" itemprop="price" style="margin-top: 35px;">
+      <p>{{product.price}} $</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="block">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="/assets/images/coffee-heart.png" height="210" width="210">
+    </div>
+    <div class="col-md-9 center">
+      <h1>Vente en ligne de thés et de café</h1>
+      <h2>Pour les amoureux de bonnes boissons</h2>
+      Vous adorez savourer un bon café ou thé le matin ou au goûter ? Malheureusement ceux vendu dans les grands magasins n'est vraiment pas à votre goût. Vous cherchez quelque chose de plus rafiné ? Plus goutu ? Ce site va faire votre bonheur. Nous nous éffor&ccedil;ons de trouver des produits de qualités issues du commerce équitable. Ainsi vous pouvez savourer en toute quiétude votre boisson favorite.
+    </div>
+  </div>
+</div>
+<div class="block center">
+  <h2>Fondez pour nos nouveaux produits</h2>
+  <div class="row">
+      <div class="col-md-3" itemscope itemtype="Product" ng-repeat="product in products | limitTo:4">
+        <div itemprop="photo" style="margin-bottom: 10px;">
+          <img src="{{product.picture}}"  height="100">
+        </div>
+        <div  itemprop="name" class="product_link">
+          <a ng-href="/#/product/{{product._id}}">{{product.name}}</a>
+        </div>
+      </div>
+  </div>
+</div>
